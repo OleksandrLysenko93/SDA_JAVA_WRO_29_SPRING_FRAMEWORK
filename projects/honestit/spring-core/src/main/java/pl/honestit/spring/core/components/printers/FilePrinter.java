@@ -1,5 +1,6 @@
 package pl.honestit.spring.core.components.printers;
 
+import org.springframework.stereotype.Component;
 import pl.honestit.spring.core.components.Printer;
 
 import java.io.FileNotFoundException;
@@ -9,6 +10,7 @@ import java.io.PrintWriter;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+@Component
 public class FilePrinter implements Printer {
     @Override
     public void print(String message) {
